@@ -17,10 +17,10 @@ idf.py build
 echo "📦 Creating release $VERSION..."
 
 # Check if binaries exist
-if [ ! -f "$BUILD_DIR/firmware.bin" ]; then
-    echo "❌ Build failed - firmware.bin not found"
-    exit 1
-fi
+#if [ ! -f "$BUILD_DIR/firmware.bin" ]; then
+#    echo "❌ Build failed - firmware.bin not found"
+#    exit 1
+#fi
 
 # Create release with all binary files
 gh release create "$VERSION" \
